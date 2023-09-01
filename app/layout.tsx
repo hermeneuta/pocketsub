@@ -1,6 +1,7 @@
 import './globals.css'
 import type { Metadata } from 'next'
 import { ClerkProvider } from '@clerk/nextjs'
+import 'remixicon/fonts/remixicon.css'
 
 export const metadata: Metadata = {
   title: 'Pocket',
