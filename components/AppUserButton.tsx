@@ -3,6 +3,8 @@ import { ClerkLoading, useUser, SignOutButton } from "@clerk/nextjs";
 import Image from "next/image"
 import * as DropdownMenu from '@radix-ui/react-dropdown-menu'
 import { useRouter } from "next/navigation"
+import AddSubscriptionButton from "./AddSubscriptionButton";
+
 
 export default function AppUserButton() {
 
@@ -14,12 +16,7 @@ export default function AppUserButton() {
   }
   return (
     <div className="flex w-full items-center justify-center flex-col gap-4 divide-y-[1px] divide-zinc-300">
-      <div>
-        <p className="mb-2 text-center text-zinc-500">Add new subscripton?</p>
-        <button className="flex items-center bg-zinc-900 py-3 pl-4 pr-6 text-zinc-50 rounded-lg">
-          <i className="ri-add-line text-2xl" />
-          New subscription</button>
-      </div>
+      <AddSubscriptionButton />
       <div className="flex items-center px-4 w-full py-4">
         <Image
           src={user.profileImageUrl}
@@ -44,6 +41,6 @@ export default function AppUserButton() {
           </DropdownMenu.Root>
         </button>
       </div>
-    </div>
+    </div >
   )
 }
