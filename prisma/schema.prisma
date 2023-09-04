@@ -55,7 +55,7 @@ model Subscription {
   ownerId String
   owner   User   @relation(fields: [ownerId], references: [id], onDelete: Cascade)
 
-  paymants Payment[]
+  payments Payment[]
 }
 
 model Payment {
