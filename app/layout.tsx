@@ -1,6 +1,8 @@
 import './globals.css'
 import type { Metadata } from 'next'
 import { ClerkProvider } from '@clerk/nextjs'
+import 'remixicon/fonts/remixicon.css'
+import Providers from '@/providers'
 
 export const metadata: Metadata = {
   title: 'Pocket',
@@ -14,9 +16,11 @@ export default function RootLayout({
 }) {
   return (
     <ClerkProvider>
-      <html lang="en">
-        <body>{children}</body>
-      </html>
+      <Providers>
+        <html lang="en">
+          <body>{children}</body>
+        </html>
+      </Providers>
     </ClerkProvider>
   )
 }

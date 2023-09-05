@@ -30,7 +30,7 @@ function nextPaymentMonthGenerator(billingPeriod: SUBSCRIPTION_BILLING_PERIOD) {
 async function main() {
   const user = await prisma.user.upsert({
     where: {
-      email: 'hello@mathesis.dev'
+      id: 'user_2UlfeHAzRkAVIqBfJw7m5nD1FFW'
     },
     update: {
       subscription: {
