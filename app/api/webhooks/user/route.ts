@@ -17,6 +17,7 @@ async function handler(request: Request) {
   const wh = new Webhook(webhookSecret);
   let evt: Event | null = null;
 
+  //weryfikacja webhooka
   try {
     evt = wh.verify(
       JSON.stringify(payload),
