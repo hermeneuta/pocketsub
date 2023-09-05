@@ -35,5 +35,12 @@
     "prettier-plugin-tailwindcss": "^0.5.3",
     "prisma": "^5.2.0",
     "ts-node": "^10.9.1"
-  }
+  },
+  "description": "App for managing subscriptions",
+  "main": "next.config.js",
+  "directories": {
+    "lib": "lib"
+  },
+  "author": "",
+  "license": "ISC"
 }
