@@ -12,7 +12,7 @@ import { addSubscription } from "@/app/(application)/actions";
 import { useUser } from "@clerk/nextjs";
 import { ClerkLoading } from "@clerk/nextjs";
 
-// komentarz
+// koment
 
 export default function AddSubscriptionButton() {
   const { user } = useUser();
