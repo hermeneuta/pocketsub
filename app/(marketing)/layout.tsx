@@ -18,7 +18,10 @@ export default function MarketingLayout({
         <nav className="w-full">
           <ul className="flex items-center justify-center gap-4">
             <li>
-              <Link href={"/blog"}>Blog</Link>
+              <Link className="flex w-full text-zinc-800 whitespace-nowrap 
+              items-center text-sm 
+                    justify-center font-medium leading-none p-4 mt-4 
+                    rounded-lg border-[1px] border-zinc-500" href={"/blog"}>Blog</Link>
             </li>
           </ul>
         </nav>
